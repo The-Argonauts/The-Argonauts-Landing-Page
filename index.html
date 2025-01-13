@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Argonauts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero-header2">
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Argonauts</a></li>
+                        <li><a href="team.html">Team Members</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+
+                <div class="hero-text">
+                    <h1>The Argonauts</h1>
+                    <p>Whether you're a business looking to fine-tune your product or a user eager to test the latest
+                        tech, our platform
+                        connects you to a community dedicated to shaping the future.</p>
+                    <p><span class="oy">Join
+                            us today</span> and be a
+                        driving force in the next wave of innovation!</p>
+
+                    <div class="btn-group">
+                        <a href="https://t.me/TheArgonauts_bot" class="btn active">Start Your Path</a>
+                    </div>
+                </div>
+                <div class="slideshow-container">
+                    <img src="Assets/1.png" class="slides" alt="Slide 1">
+                    <img src="Assets/2.jpg" class="slides" alt="Slide 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 50px;
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+            border-radius: 50px;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.slides');
+            slides.forEach(slide => slide.classList.remove('active'));
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].classList.add('active');
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+
+    <section id="logo">
+        <div class="logo-container">
+            <div class="logo-item">
+                <div class="logo" style="background-image: url('Assets/AmirkabirLogo.png');"></div>
+            </div>
+            <div class="logo-item">
+                <div class="logo" style="background-image: url('Assets/AppleLogo.png');"></div>
+            </div>
+            <div class="logo-item">
+                <div class="logo" style="background-image: url('Assets/Logo.png');"></div>
+            </div>
+            <div class="logo-item">
+                <div class="logo" style="background-image: url('Assets/Google.jpg');"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="wrapper">
+            <div class="projects-grid">
+                <!-- First row -->
+                <div class="project-card project-img-card">
+                    <img src="Assets/usertest.jpg" alt="TestUser">
+                </div>
+                <div class="project-card project-info-card">
+                    <div class="project-info">
+                        <h3>A powerful platform for testing</h3>
+                        <p>Be the first one to test anything in the real world and be involved in the process of your
+                            favorite companies products.
+                        <div class="btn-group-2">
+                            <a href="https://t.me/TheArgonauts_bot" class="btn active">Apply for a test plan</a>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Second row -->
+
+                <div class="project-card project-info-card">
+                    <div class="project-info">
+                        <h3>Access high-quality testers</h3>
+                        <p>Access a wide pool of testers from diverse backgrounds, ready to provide product-changing
+                            feedback. Their insights will
+                            positively impact your product development process, helping you identify potential issues
+                            before release.
+                        <div class="btn-group-2">
+                            <a href="https://t.me/TheArgonauts_bot" class="btn active">Create a test plan</a>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card project-img-card">
+                    <img src="Assets/Businesstest.png" alt="Business">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="education">
+
+        <div class="education-container">
+            <div class="education-item">
+                <div class="circle"><img src="Assets/Explore.png" alt="Business"></div>
+                <div class="text-box">
+
+                    <span class="degree">Explore Test Plans and Build a Beta Community.</span>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="circle"><img src="Assets/test.png" alt="Business"></div>
+                <div class="text-box">
+
+                    <span class="degree">Testing Anything, Anywhere.</span>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="circle"><img src="Assets/evolve.png" alt="Business"></div>
+                <div class="text-box">
+
+                    <span class="degree">Evolve your products to be market-ready.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonai">
+        <div class="testimonial-slider">
+            <h1>Testimonials</h1>
+            <div class="testimonial active">
+
+                <blockquote>
+                    <p>BetaTesting testers are smart, creative and eager to discover new products. They will get to the
+                        essence
+                        of your tool in no time and give you quality feedback enough to shape your roadmap for well into
+                        the
+                        future.</p>
+                    <cite>Robert Muño, Co-Founder, Typeform</cite>
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    <p>BetaTesting is an amazing team, who were very helpful, diligent and thorough from immediately
+                        understanding the
+                        requirements of our unique software to overall execution of the program to the scale of our
+                        expectations.</p>
+                    <cite>John Doe, CEO</cite>
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    <p>Working with BetaTesting has been a great experience for us. Not only did we get a lot of support
+                        and assistance when
+                        launching our early access program, but the results were fantastic. We received close to 500
+                        testers for our beta
+                        program and hundreds of insightful comments and questions from early adopters. Would recommend
+                        them to anyone who is at
+                        the stage of launching their next company or product.
+
+                    </p>
+                    <cite>Jane Smith</cite>
+                </blockquote>
+            </div>
+            <div class="nav-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </section>
+
+
+    <section id="faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <h2>Do I have to pay to be a contributor?</h2>
+                <span class="arrow">⌄</span>
+            </div>
+            <div class="faq-answer">
+                <p>No</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <h2>How much do I get paid and when do I get paid?</h2>
+                <span class="arrow">⌄</span>
+            </div>
+            <div class="faq-answer">
+                <p>The reward amounts for each test vary and depend on the company that you are doing the test for.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <h2>What happens after applying for a test?</h2>
+                <span class="arrow">⌄</span>
+            </div>
+            <div class="faq-answer">
+                <p>You will be contacted by the company and they will tell you how to proceed further. After the test
+                    you can provide feedbacks.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === 'none' || !answer.style.display ? 'block' : 'none';
+            const arrow = element.querySelector('.arrow');
+            arrow.textContent = arrow.textContent === '⌄' ? '⌃' : '⌄';
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <h1>The Argonauts</h1>
+                <p>Human understanding. Human experiences.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://t.me/TheArgonauts_bot"><i class="fab fa-telegram"></i></a>
+                <a href="https://github.com/The-Argonauts" target="_blank">
+                    <i class="fa-brands fa-github"></i></a>
+                </a>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; TheArgonauts 2025</p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
